@@ -92,15 +92,10 @@ def main():
             if evento.type == pygame.QUIT:
                 rodando = False
 
-        # Controles do jogador (Setas ou W/S)
-        teclas = pygame.key.get_pressed()
-        if teclas[pygame.K_UP] or teclas[pygame.K_w]:
-            pos_y -= 7
-        if teclas[pygame.K_DOWN] or teclas[pygame.K_s]:
-            pos_y += 7
-
-        # Limita o movimento da raquete dentro da janela
-        pos_y = max(10, min(ALTURA - TAMANHO_RAQUETE[1] - 10, pos_y))
+   
+mouse_x, mouse_y = pygame.mouse.get_pos()
+pos_y = mouse_y - TAMANHO_RAQUETE[1] // 2
+pos_y = max(10, min(ALTURA - TAMANHO_RAQUETE[1] - 10, pos_y))
 
         # Envia a posição do jogador atual e recebe o estado atualizado do servidor
         resposta = cliente.enviar(str(pos_y))
