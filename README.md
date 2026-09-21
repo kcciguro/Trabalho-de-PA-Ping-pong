@@ -22,3 +22,9 @@ O jogo coloca o jogador em uma visão frontal (POV) de uma mesa de tênis de mes
 2. **Controlo da Raquete:** A raquete do jogador acompanha o movimento livre do rato (eixos X e Y na zona frontal da mesa).
 3. **Física da Bola e Pingo:** A bola possui profundidade ($Z$) e altura ($Y$), simulando o salto real na mesa antes de ser rebatida.
 4. **Regras e Pontuação:** Se a bola sair pelas laterais ou ultrapassar a linha da raquete sem colisão, o ponto é contabilizado automaticamente para o adversário e a jogada recomeça.
+5. 
+##  Atenção
+Codigo para funcionar no Pycharm
+1. python -m pip install --upgrade pip
+2. pip install pygame-ce
+3. Seja Feliz!
