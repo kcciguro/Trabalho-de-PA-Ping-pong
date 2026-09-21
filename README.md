@@ -3,8 +3,8 @@
 #  Ping Pong 3D
 
 ##  Integrantes da Equipa
-* **João Carlos** - [Link do Perfil do GitHub]
-* **Guilherme** - [Link do Perfil do GitHub]
+* **João Carlos** 
+* **Guilherme** 
 
 ##  Tema Escolhido
 Jogo de Ping Pong em perspectiva de primeira pessoa (3D POV) desenvolvido em Python utilizando a biblioteca **Pygame**.
